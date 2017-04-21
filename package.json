@@ -1,0 +1,50 @@
+{
+  "name": "events.hillcitymnag.church",
+  "version": "1.0.0",
+  "description": "Get Hill City Assembly of God events from Facebook's event endpoint",
+  "main": "lib/index.js",
+  "repository": "https://github.com/hillcitymnag/events.hillcitymnag.church.git",
+  "author": "Brent Mealhouse <bmealhouse@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "scripts": {
+    "build": "npm run lint && npm test",
+    "dev": "nodemon -x npm start",
+    "lint": "xo",
+    "precommit": "npm run lint && lint-staged",
+    "prepush": "npm run build",
+    "start": "micro",
+    "test": "NODE_ENV=test nyc ava -v"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --no-semi --single-quote --no-bracket-spacing --write",
+      "git add"
+    ]
+  },
+  "xo": {
+    "space": true,
+    "semicolon": false
+  },
+  "dependencies": {
+    "ava": "0.19.1",
+    "micro": "7.3.2",
+    "micro-cors": "0.0.4",
+    "micro-get": "0.1.1",
+    "micro-rollbar": "0.2.2",
+    "nock": "9.0.13",
+    "node-fetch": "1.6.3",
+    "nyc": "10.2.0",
+    "rollbar": "0.6.5",
+    "test-listen": "1.0.2",
+    "xo": "0.18.1"
+  },
+  "devDependencies": {
+    "husky": "0.13.3",
+    "lint-staged": "3.4.0",
+    "nodemon": "1.11.0",
+    "prettier": "1.2.2"
+  }
+}

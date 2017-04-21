@@ -1,0 +1,8 @@
+{
+  "type": "npm",
+  "alias": "events.hillcitymnag.church",
+  "env": {
+    "NODE_ENV": "production",
+    "HCAG_FACEBOOK_APP_SECRET": "@hcag-facebook-app-secret"
+  }
+}
