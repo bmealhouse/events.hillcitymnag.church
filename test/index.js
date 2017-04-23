@@ -129,8 +129,8 @@ test.serial('200: single page', async t => {
       id: '1791559507836465',
       name: 'Boundaries Book Study',
       description: 'Boundaries are important things to set as we interact with family, friends, the workplace and God. Drs. Cloud and Townsend pace us through a Biblical standard for "When to say Yes and How to say No to take control of your life." Book study will cost $10 if you purchase the book through the church. If you would like to take part please FB message Pastor Valley or text him at 218.398.4197. Study will run on Sundays until April 30.',
-      startTime: '2017-03-05T18:00:00-0600',
-      endTime: '2017-03-05T20:00:00-0600',
+      startTime: 1488758400000,
+      endTime: 1488765600000,
       place: {
         id: '115583631855218',
         name: 'Hill City Assembly of God',
@@ -185,8 +185,8 @@ test.serial('200: multiple pages', async t => {
       id: '1791559507836465',
       name: 'Boundaries Book Study',
       description: 'Boundaries are important things to set as we interact with family, friends, the workplace and God. Drs. Cloud and Townsend pace us through a Biblical standard for "When to say Yes and How to say No to take control of your life." Book study will cost $10 if you purchase the book through the church. If you would like to take part please FB message Pastor Valley or text him at 218.398.4197. Study will run on Sundays until April 30.',
-      startTime: '2017-03-05T18:00:00-0600',
-      endTime: '2017-03-05T20:00:00-0600',
+      startTime: 1488758400000,
+      endTime: 1488765600000,
       place: {
         id: '115583631855218',
         name: 'Hill City Assembly of God',
@@ -205,8 +205,8 @@ test.serial('200: multiple pages', async t => {
       id: '620815931450763',
       name: 'Christmas Eve Service',
       description: 'Come join us for an time of singing and reflection centered on the birth of our Savior. Many families have made this an annual tradition and we hope your family will join us, as well.',
-      startTime: '2016-12-24T19:00:00-0600',
-      endTime: '2016-12-24T20:00:00-0600',
+      startTime: 1482627600000,
+      endTime: 1482631200000,
       place: {
         id: '115583631855218',
         name: 'Hill City Assembly of God',
