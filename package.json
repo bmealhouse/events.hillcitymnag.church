@@ -16,7 +16,12 @@
     "precommit": "lint-staged",
     "prepush": "npm run build",
     "start": "micro",
-    "test": "NODE_ENV=test nyc ava -v"
+    "test": "NODE_ENV=test jest"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "testEnvironment": "node",
+    "verbose": true
   },
   "lint-staged": {
     "*.js": [
@@ -26,20 +31,22 @@
     ]
   },
   "xo": {
+    "envs": [
+      "jest"
+    ],
     "extends": [
       "prettier"
     ]
   },
   "dependencies": {
-    "ava": "0.19.1",
     "eslint-config-prettier": "2.1.1",
+    "jest": "20.0.4",
     "micro": "7.3.3",
     "micro-cors": "0.0.4",
     "micro-get": "0.1.1",
     "micro-rollbar": "1.0.0",
     "nock": "9.0.13",
     "node-fetch": "1.7.1",
-    "nyc": "11.0.2",
     "rollbar": "2.0.4",
     "test-listen": "1.0.2",
     "xo": "0.18.2"
