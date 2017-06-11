@@ -977,6 +977,10 @@ console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
 
+"console-polyfill@github:rollbar/console-polyfill#eab6ff9d2b7597fc2f259baa18100556bdb94dbe":
+  version "0.2.3"
+  resolved "https://codeload.github.com/rollbar/console-polyfill/tar.gz/eab6ff9d2b7597fc2f259baa18100556bdb94dbe"
+
 contains-path@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/contains-path/-/contains-path-0.1.0.tgz#fe8cf184ff6670b6baef01a9d4861a5cbec4120a"
@@ -1262,6 +1266,12 @@ error-ex@^1.2.0:
   resolved "https://registry.yarnpkg.com/error-ex/-/error-ex-1.3.1.tgz#f855a86ce61adc4e8621c3cda21e7a7612c3a8dc"
   dependencies:
     is-arrayish "^0.2.1"
+
+error-stack-parser@1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/error-stack-parser/-/error-stack-parser-1.3.3.tgz#fada6e3a9cd2b0e080e6d6fc751418649734f35c"
+  dependencies:
+    stackframe "^0.3.1"
 
 es5-ext@^0.10.14, es5-ext@^0.10.9, es5-ext@~0.10.14:
   version "0.10.23"
@@ -1594,6 +1604,10 @@ expand-range@^1.8.1:
   resolved "https://registry.yarnpkg.com/expand-range/-/expand-range-1.8.2.tgz#a299effd335fe2721ebae8e257ec79644fc85337"
   dependencies:
     fill-range "^2.1.0"
+
+extend@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.0.tgz#5a474353b9f3353ddd8176dfd37b91c83a46f1d4"
 
 extend@~3.0.0:
   version "3.0.1"
@@ -2312,6 +2326,10 @@ is-utf8@^0.2.0, is-utf8@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-utf8/-/is-utf8-0.2.1.tgz#4b0da1442104d1b336340e80797e865cf39f7d72"
 
+is_js@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/is_js/-/is_js-0.9.0.tgz#0ab94540502ba7afa24c856aa985561669e9c52d"
+
 isarray@1.0.0, isarray@^1.0.0, isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
@@ -2901,12 +2919,11 @@ micro-get@0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/micro-get/-/micro-get-0.1.1.tgz#6eecd2e4ddf41d331fcd51da3f48b18f2cb745c9"
 
-micro-rollbar@0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/micro-rollbar/-/micro-rollbar-0.2.3.tgz#4b5149af7cb706298f9f2519385e36b66a63d287"
+micro-rollbar@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/micro-rollbar/-/micro-rollbar-1.0.0.tgz#63dd65e2a7ec4b0cc773bcd6c28ad6cf37da2cc0"
   dependencies:
     micro "7.3.3"
-    rollbar "0.6.5"
 
 micro@7.3.3:
   version "7.3.3"
@@ -3732,9 +3749,11 @@ req-all@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/req-all/-/req-all-1.0.0.tgz#d128569451c340b432409c656cf166260cd2628d"
 
-request-ip@~1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/request-ip/-/request-ip-1.2.3.tgz#66988f0e22406ec4af630d19b573fe4b447c3b49"
+request-ip@~2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/request-ip/-/request-ip-2.0.1.tgz#10fbf971ba73e1dd6baf2c325275b6d3d4c10a71"
+  dependencies:
+    is_js "^0.9.0"
 
 request-promise-core@1.1.1:
   version "1.1.1"
@@ -3851,16 +3870,19 @@ rimraf@2, rimraf@^2.2.8, rimraf@^2.3.3, rimraf@^2.5.1, rimraf@^2.5.4, rimraf@^2.
   dependencies:
     glob "^7.0.5"
 
-rollbar@0.6.5:
-  version "0.6.5"
-  resolved "https://registry.yarnpkg.com/rollbar/-/rollbar-0.6.5.tgz#e20352201fdab79b96e3c6a02d7f4a12c3dc2dfe"
+rollbar@2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/rollbar/-/rollbar-2.0.4.tgz#11b8ae5a8875af58d6f38ea3f43c022dd4d5a328"
   dependencies:
     async "~1.2.1"
+    console-polyfill rollbar/console-polyfill#eab6ff9d2b7597fc2f259baa18100556bdb94dbe
     debug "2.2.0"
+    error-stack-parser "1.3.3"
+    extend "3.0.0"
     json-stringify-safe "~5.0.0"
     lru-cache "~2.2.1"
-    request-ip "~1.2.3"
-    uuid "~3.0.0"
+    request-ip "~2.0.1"
+    uuid "3.0.x"
   optionalDependencies:
     decache "^3.0.5"
 
@@ -4020,6 +4042,10 @@ sshpk@^1.7.0:
 stack-utils@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/stack-utils/-/stack-utils-1.0.1.tgz#d4f33ab54e8e38778b0ca5cfd3b3afb12db68620"
+
+stackframe@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/stackframe/-/stackframe-0.3.1.tgz#33aa84f1177a5548c8935533cbfeb3420975f5a4"
 
 staged-git-files@0.0.4:
   version "0.0.4"
@@ -4387,13 +4413,13 @@ util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
 
+uuid@3.0.x, uuid@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.0.1.tgz#6544bba2dfda8c1cf17e629a3a305e2bb1fee6c1"
+
 uuid@^2.0.1:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-2.0.3.tgz#67e2e863797215530dff318e5bf9dcebfd47b21a"
-
-uuid@^3.0.0, uuid@~3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.0.1.tgz#6544bba2dfda8c1cf17e629a3a305e2bb1fee6c1"
 
 validate-npm-package-license@^3.0.1:
   version "3.0.1"
