@@ -11,33 +11,33 @@
 ### Installation
 
 ```sh
-npm install && npm start
+yarn && yarn start
 ```
 
-_You need to have Node >= 7.6 on your machine_.
+_You need to have Node >= 8.1 on your machine_.
 
 ## Scripts
 
-### `npm start`
+### `yarn start`
 
 Runs the service.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm test`
+### `yarn test`
 
 Runs the tests using [AVA](https://github.com/avajs/ava).<br>
 Code coverage report will also be included in command line output.
 
-### `npm run build`
+### `yarn run build`
 
-Runs `npm run lint` & `npm test`.<br>
+Runs `yarn run lint` & `yarn test`.<br>
 See the corresponding docs for more information.
 
-### `npm run dev`
+### `yarn run dev`
 
 Monitors the source code of the service using [nodemon](http://nodemon.io/).<br>
 Automatically restarts the service when a code change is detected.
 
-### `npm run lint`
+### `yarn run lint`
 
 Lints the code using [XO](https://github.com/sindresorhus/xo).

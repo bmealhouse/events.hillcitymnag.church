@@ -7,7 +7,7 @@
   "author": "Brent Mealhouse <bmealhouse@gmail.com>",
   "license": "MIT",
   "engines": {
-    "node": ">=7.6.0"
+    "node": ">=8.1.0"
   },
   "scripts": {
     "build": "npm run lint && npm test",
