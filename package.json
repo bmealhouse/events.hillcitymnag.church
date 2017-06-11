@@ -13,23 +13,26 @@
     "build": "npm run lint && npm test",
     "dev": "nodemon -x npm start",
     "lint": "xo",
-    "precommit": "npm run lint && lint-staged",
+    "precommit": "lint-staged",
     "prepush": "npm run build",
     "start": "micro",
     "test": "NODE_ENV=test nyc ava -v"
   },
   "lint-staged": {
     "*.js": [
+      "npm run lint",
       "prettier --no-semi --single-quote --no-bracket-spacing --write",
       "git add"
     ]
   },
   "xo": {
-    "space": true,
-    "semicolon": false
+    "extends": [
+      "prettier"
+    ]
   },
   "dependencies": {
     "ava": "0.19.1",
+    "eslint-config-prettier": "2.1.1",
     "micro": "7.3.3",
     "micro-cors": "0.0.4",
     "micro-get": "0.1.1",
