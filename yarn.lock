@@ -655,7 +655,7 @@ console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
 
-console-polyfill@rollbar/console-polyfill#eab6ff9d2b7597fc2f259baa18100556bdb94dbe:
+"console-polyfill@github:rollbar/console-polyfill#eab6ff9d2b7597fc2f259baa18100556bdb94dbe":
   version "0.2.3"
   resolved "https://codeload.github.com/rollbar/console-polyfill/tar.gz/eab6ff9d2b7597fc2f259baa18100556bdb94dbe"
 
@@ -2689,11 +2689,12 @@ micro-get@0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/micro-get/-/micro-get-0.1.1.tgz#6eecd2e4ddf41d331fcd51da3f48b18f2cb745c9"
 
-micro-rollbar@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/micro-rollbar/-/micro-rollbar-1.0.0.tgz#63dd65e2a7ec4b0cc773bcd6c28ad6cf37da2cc0"
+micro-rollbar@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/micro-rollbar/-/micro-rollbar-1.0.2.tgz#85cc99172be6788445e2aa7c7f86d4368d635c0b"
   dependencies:
     micro "7.3.3"
+    rollbar "2.0.4"
 
 micro@7.3.3:
   version "7.3.3"
