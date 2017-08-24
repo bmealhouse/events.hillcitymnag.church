@@ -10,13 +10,11 @@
     "node": ">=8.1.0"
   },
   "scripts": {
-    "build": "npm run lint && npm test",
-    "dev": "nodemon -x npm start",
-    "lint": "xo",
+    "dev": "micro-dev",
     "precommit": "lint-staged",
-    "prepush": "npm run build",
+    "prepush": "xo && npm test",
     "start": "micro",
-    "test": "NODE_ENV=test jest"
+    "test": "jest"
   },
   "jest": {
     "collectCoverage": true,
@@ -25,7 +23,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "npm run lint",
+      "xo",
       "prettier --no-semi --single-quote --no-bracket-spacing --write",
       "git add"
     ]
@@ -39,21 +37,21 @@
     ]
   },
   "dependencies": {
-    "eslint-config-prettier": "2.1.1",
-    "jest": "20.0.4",
-    "micro": "7.3.3",
+    "micro": "8.0.3",
     "micro-cors": "0.0.4",
     "micro-get": "0.1.1",
-    "micro-rollbar": "1.0.2",
-    "nock": "9.0.13",
-    "node-fetch": "1.7.1",
-    "test-listen": "1.0.2",
-    "xo": "0.18.2"
+    "micro-rollbar": "1.0.4",
+    "node-fetch": "1.7.2"
   },
   "devDependencies": {
-    "husky": "0.13.4",
-    "lint-staged": "3.6.1",
-    "nodemon": "1.11.0",
-    "prettier": "1.4.4"
+    "eslint-config-prettier": "2.3.0",
+    "husky": "0.14.3",
+    "jest": "20.0.4",
+    "lint-staged": "4.0.4",
+    "micro-dev": "1.2.1",
+    "nock": "9.0.14",
+    "prettier": "1.5.3",
+    "test-listen": "1.0.2",
+    "xo": "0.18.2"
   }
 }
